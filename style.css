@@ -1,3 +1,6 @@
+.fond{
+    background-color: #000000;
+}
 .placement{
     display: flex;
 }
@@ -7,4 +10,19 @@
 
 .droite{
 
+}
+
+.titre {
+    color: #ffffff;
+    background: #000000;
+    text-shadow: 2px 2px 0 #7a6262, 4px 4px 0 #3f3737;
+    color: #ffffff;
+    background: #000000;
+    }
+.cadre {
+    border: 5px ridge #ff0000;
+    border-radius: 11px 12px 12px 12px;
+}
+.texte{
+    color: #ffffff;
 }
