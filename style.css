@@ -1,199 +1,207 @@
-            .fond {
-                background: #000000;
-            }
-            
-            .placement {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .placement2 {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .bas {
-                margin-left: 40%;
-            }
-            
-            .haut {}
-            
-            .gauche {}
-            
-            .droite {}
-            
-            .titre {
-                color: #333;
-                background: #1c1d22;
-                text-shadow: 2px 2px 0 #7a6262, 4px 4px 0 #3f3737;
-                color: #ffffff;
-                background: #1c1d22;
-                margin-top: 25px;
-                margin-bottom: 25px;
-                margin-left: 25px;
-            }
-            
-            .cadre {
-                border: 5px ridge #d94f5c;
-                border-radius: 11px 12px 12px 12px;
-                margin-bottom: 25px;
-            }
-            
-            .texte {
-                color: #ffffff;
-                margin-left: 25px;
-                margin-bottom: 25px;
-            }
-            
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            
-            body,
-            .flex-center {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            body {
-                height: 100vh;
-                background-color: #ffffff;
-                background-image: linear-gradient(315deg, #000000 0%, #000000 74%);
-            }
-            
-            .social-links {
-                display: flex;
-            }
-            
-            .social-btn {
-                cursor: pointer;
-                height: 50px;
-                width: 50px;
-                font-family: 'Titillium Web', sans-serif;
-                color: #333;
-                border-radius: 10px;
-                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-                background: white;
-                margin: 5px;
-                transition: 1s;
-            }
-            
-            .social-btn span {
-                width: 0px;
-                overflow: hidden;
-                transition: 1s;
-                text-align: center;
-            }
-            
-            .social-btn:hover {
-                width: 150px;
-                border-radius: 5px;
-            }
-            
-            .social-btn:hover span {
-                padding: 2px;
-                width: max-content;
-            }
-            
-            #twitter svg {
-                fill: #1da1f2;
-            }
-            
-            #linkedin svg {
-                fill: #0e76a8;
-            }
-            
-            #github {
-                fill: #333;
-            }
-            
-            h1 {
-                margin-left: 50px;
-                background-color: rgb(0, 0, 0);
-                Animation-name: fade;
-                Animation-delay: 2s;
-                Animation-duration: 3s;
-                Animation-iteration-count: infinite;
-            }
-            
-            @keyframes fade {
-                From {
-                    Opacity: 1;
-                }
-                To {
-                    Opacity: 0;
-                }
-            }
-            
-            html {
-                box-sizing: border-box;
-            }
-            
-            *,
-            *:before,
-            *:after {
-                box-sizing: inherit;
-                padding: 0;
-                margin: 0;
-                letter-spacing: 1.1px;
-            }
-            
-            body,
-            html {
-                width: 100%;
-                height: 100%;
-                background: #1c1d22;
-                font-family: "Varela Round", sans-serif;
-            }
-            
-            .menu {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 720px;
-                margin: 0 auto;
-                list-style: none;
-            }
-            
-            .menu li {
-                width: 125px;
-                height: 50px;
-                transition: background-position-x 0.9s linear;
-                text-align: center;
-            }
-            
-            .menu li a {
-                font-size: 22px;
-                color: #777;
-                text-decoration: none;
-                transition: all 0.45s;
-            }
-            
-            .menu li:hover {
-                background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
-                -webkit-animation: line 1s;
-                animation: line 1s;
-            }
-            
-            .menu li:hover a {
-                color: #d94f5c;
-            }
-            
-            .menu li:not(:last-child) {
-                margin-right: 30px;
-            }
-            
-            @-webkit-keyframes line {
-                0% {
-                    background-position-x: 390px;
-                }
-            }
-            
-            @keyframes line {
-                0% {
-                    background-position-x: 390px;
-                }
-            }
+/* Menu */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.1px;
+}
+
+body,
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #1c1d22;
+    font-family: "Varela Round", sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.menu li {
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+}
+
+.menu li a {
+    font-size: 22px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.45s;
+}
+
+.menu li:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    -webkit-animation: line 1s;
+    animation: line 1s;
+}
+
+.menu li:hover a {
+    color: #d94f5c;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 30px;
+}
+
+@-webkit-keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+.nom {
+    color: #333;
+    background: #1c1d22;
+    text-shadow: 2px 2px 0 #7a6262, 4px 4px 0 #3f3737;
+    color: #ffffff;
+    background: #1c1d22;
+}
+
+
+/* clignotement Doué Thomas */
+
+h1 {
+    color: #333;
+    background: #1c1d22;
+    text-shadow: 2px 2px 0 #7a6262, 4px 4px 0 #3f3737;
+    color: #ffffff;
+    background: #1c1d22;
+    text-align: center;
+    Animation-name: fade;
+    Animation-delay: 2s;
+    Animation-duration: 3s;
+    Animation-iteration-count: infinite;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+@keyframes fade {
+    From {
+        Opacity: 1;
+    }
+    To {
+        Opacity: 0;
+    }
+}
+
+/* Gestion de texte */
+
+.placement {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre {
+    color: #333;
+    background: #1c1d22;
+    text-shadow: 2px 2px 0 #7a6262, 4px 4px 0 #3f3737;
+    color: #ffffff;
+    background: #1c1d22;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.cadre {
+    border: 5px ridge #d94f5c;
+    border-radius: 11px 12px 12px 12px;
+    margin-bottom: 25px;
+}
+
+.texte {
+    color: #ffffff;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+/* Gestion animation réseaux sociaux */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 1s;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+}
+
+.social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: max-content;
+}
+
+#twitter svg {
+    fill: #1da1f2;
+}
+
+#linkedin svg {
+    fill: #0e76a8;
+}
+
+#github {
+    fill: #333;
+}
