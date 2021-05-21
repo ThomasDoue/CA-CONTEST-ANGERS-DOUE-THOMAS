@@ -4,6 +4,7 @@
             
             .placement {
                 display: flex;
+                flex-direction: column;
             }
             
             .placement2 {
@@ -35,6 +36,7 @@
             .cadre {
                 border: 5px ridge #d94f5c;
                 border-radius: 11px 12px 12px 12px;
+                margin-bottom: 25px;
             }
             
             .texte {
